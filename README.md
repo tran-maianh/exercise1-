@@ -27,7 +27,7 @@ Từ vùng $10\text{ kHz}$ trở đi: đường dốc xuống chứng tỏ các 
   
   Reset
   
-**Process:**: Sử dụng IC 74LS90 (đếm BCD)
+**Process:**: Sử dụng IC 74LS90 (đếm BCD), IC 74LS47 (giải mã LED 7 đoạn)
 
   Tầng 1 (hàng đơn vị): Đếm từ 0-9. Khi chạm đến 10, nó tự reset về 0 và gửi 1 xung "Carry" sang tầng 2.
 
@@ -37,5 +37,12 @@ Từ vùng $10\text{ kHz}$ trở đi: đường dốc xuống chứng tỏ các 
   
 **Output:**
 
-  2 LED 7 
+  2 LED 7 đoạn
+
+  <img width="1329" height="499" alt="image" src="https://github.com/user-attachments/assets/5ea0b4ef-dbba-47f7-8645-e1ebd720a931" />
+  <img width="1291" height="525" alt="image" src="https://github.com/user-attachments/assets/36cac53d-0d20-4e31-958d-e6ebfbd64bcf" 
+    <img width="1612" height="680" alt="image" src="https://github.com/user-attachments/assets/92ddc31e-16a0-460e-9c53-1022d1a3cc48" />
+
+
+
 
