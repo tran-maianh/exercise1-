@@ -20,3 +20,22 @@ Từ $10\text{ Hz}$ đến dưới $10\text{ kHz}$ (Dải thông - Passband): Đ
 Từ vùng $10\text{ kHz}$ trở đi: đường dốc xuống chứng tỏ các tần số cao bị nhiễu và triệt tiêu gần như hoàn toàn
 
 # Bài 2: Thiết kế và mô phỏng một mạch đếm từ 0->99, hiển thị lên 2 LED 7 đoạn. Ngõ vào là 2 nút: PULSE, RESET. Cứ mỗi lần nhấn nút thì số đếm tăng 1, nhấn reset số đếm về 0. Mô phỏng sử dụng phần mềm Proteus. 
+
+**Input:** 
+
+  Pulse: mỗi lần nhấn tăng 1 -> tạo xung clk
+  
+  Reset
+  
+**Process:**: Sử dụng IC 74LS90 (đếm BCD)
+
+  Tầng 1 (hàng đơn vị): Đếm từ 0-9. Khi chạm đến 10, nó tự reset về 0 và gửi 1 xung "Carry" sang tầng 2.
+
+  Tầng 2 (Hàng chục): Đếm khi nhận xung từ tầng 1.
+
+  Nút RESET sẽ nối chung vào chân Clear của cả 2 IC.
+  
+**Output:**
+
+  2 LED 7 
+
